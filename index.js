@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use("/", (req, res) => {
   console.log("HomePage Model");
-  res.send("HomePage");
+  res.send("HomePage Route");
 });
 
 app.use("/user", userController);

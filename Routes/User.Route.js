@@ -8,7 +8,7 @@ const userController = Router();
 
 userController.get("/", async (req, res) => {
   let data = await userModel.find({});
-  res.send(data);
+  res.send("This is User Route");
 });
 
 userController.post("/signup", (req, res) => {

@@ -15,7 +15,7 @@ app.use("/todo", todoController);
 app.listen(8080, async () => {
   try {
     await connection;
-    console.log("Connected to Database");
+    console.log("Connected to Mongo Database");
   } catch (err) {
     console.log("Not Connected to Database");
   }

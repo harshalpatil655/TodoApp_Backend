@@ -8,6 +8,11 @@ const { userController } = require("./Routes/User.Route");
 const app = express();
 app.use(express.json());
 
+app.use("/", (req, res) => {
+  console.log("HomePage");
+  res.send("HomePage");
+});
+
 app.use("/user", userController);
 app.use(authetication);
 app.use("/todo", todoController);

@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/", (req, res) => {
-  console.log("HomePage");
+  console.log("HomePage Model");
   res.send("HomePage");
 });
 
